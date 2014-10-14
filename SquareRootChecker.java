@@ -1,16 +1,18 @@
-/**
-*
-* Prompts user to enter a value, checks if negative -- if not, prints out the square root
-*
-* @author <your name here>
-* @version <date you finished the code>
-*
-*/
+import java.util.Scanner;
 
-public class SquareRootChecker {
-	
-	public static void main(String[] args) {
-		// TODO - Put your code here
-	}
-
+public class SquareRootChecker{
+ 
+  public static void main(String[] args){
+   Scanner scnr = new Scanner(System.in);
+   
+   System.out.println("Enter positve interger: ");
+   int number = scnr.nextInt();
+   
+   if (number<0){
+   System.out.println("Enter zero or quantity greater than 0: ");
+   }else{
+   System.out.println("The squareroot of you number is " + Math.sqrt(number));
+   }
+ }
 }
+   
